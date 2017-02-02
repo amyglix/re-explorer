@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+
+    <title>Website Contact | RE Explorer</title>
+    
+     <!--#include virtual="/assets/template/head.html"-->
+
+  </head>
+
+  <body>
+
+   <!--#include virtual="/assets/template/top-nav.html"-->
+   
+   <div id="content">
+   
+   <!-- Start Page Content -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+        
+        	<h1>Website Contact</h1>
+        	
+        	<!--#if expr="$QUERY_STRING = 'submitted'" -->
+			<blockquote>
+				<p><strong>Thank you, your comments have been received.</strong></p>
+			</blockquote>
+			<!--#else -->
+        
+        	<p class="lead">Please use this form to send us your comments, report problems, and/or ask questions about information on this website.</p>
+        	
+			<form action="/assets/forms/webmaster-email-sender.php" method="post" id="webmaster">
+				
+			  <div class="form-group required">
+				<label for="name" class="control-label">Your Name</label>
+				<input type="text" name="required-name" id="name" class="form-control required" placeholder="Name" title="Your name is required">
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="org" class="control-label">Organization</label>
+				<input type="text" name="org" id="org" class="form-control" placeholder="Organization">
+			  </div>
+			  
+			  <div class="form-group required">
+				<label for="email" class="control-label">Your email address</label>
+				<input type="email" name="required-email" id="email" class="form-control required" placeholder="Email" title="Please enter a valid email address">
+			  </div>
+			  
+			  <div class="form-group required">
+			  	<label for="message" class="control-label">Your Message</label>
+			  	<textarea name="required-message" id="message" class="form-control required" rows="3" title=" A message is required"></textarea>
+			  </div>
+				  
+			  <button type="submit" class="btn btn-default">Submit</button>
+			  
+			  	<!-- input type="hidden" name="webmaster" value="sadie.cox@nrel.gov, karin.haas@nrel.gov" -->
+			  	<input type="hidden" name="webmaster" value="cowebtest@nrel.gov">
+    			<input type="hidden" name="success" value="/webmaster.html?submitted">
+			</form>
+       
+        </div>
+      </div>
+      
+      
+      </div> <!-- /container -->
+      
+	</div> <!-- /#content -->
+	<!-- End Page Content -->
+	<!--#endif -->
+    <!--#include virtual="/assets/template/footer.html"-->
+    <!--#include virtual="/assets/template/scripts.html"-->
+    <script src="/assets/js/validate/jquery.validate.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+    		$('#webmaster').validate();
+			});
+	  </script>
+    
+  </body>
+</html>

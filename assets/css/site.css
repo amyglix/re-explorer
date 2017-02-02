@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.logo {margin: 20px 0;}
+.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.navbar-inverse {
+	background-color: rgba(11,83,132,.7);
+	border: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+	text-decoration: none;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:active, .navbar-inverse .navbar-nav > li > a.active,
+.navbar-inverse .navbar-nav > li > a:focus {
+	background-color: #0B5384;
+}
+.jumbotron {
+	background-image: url("/assets/images/hp-background.jpg");
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.jumbotron .intro {
+	background-color: rgba(11,83,132,.5);
+	border: 1px solid #FFF;
+	padding: 25px;
+}
+.jumbotron h1 {
+	font-weight: 500;
+	font-size: 2.25em;
+	color: #FFB920;
+}
+.jumbotron p {
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #fff;
+}
+.feature h4 {
+	font-weight: 400;
+	font-size: 1.25em;
+}
+.feature h4 a {
+	color: #D14020;
+	text-decoration: none;
+}
+.feature h4 a:hover {
+	text-decoration: underline;
+}
+.feature p {
+	font-weight: 400; 
+	font-size: 1.125em; 
+	color:#353535;
+}
+footer {
+	font-weight: 400;
+	font-size: 1em;
+	color: #353535;
+	background-color: #efefef;
+	padding: 2.5em 0 1.5em 0;
+	margin: 2em 0 0 0;
+	text-align: center;
+	box-shadow: 0px 500px 0px 500px #efefef;
+}
+footer a {
+	text-decoration: none;
+}
+footer img {
+	margin: 20px auto;
+}
+h1 {
+	font-weight: 300;
+	font-size: 1.9em;
+	color: #D14020;
+}
+h2 {
+	font-weight: 500;
+	font-size: 1.5em;
+	color: #0B5384;
+}
+h3 {
+	font-weight: 500;
+	font-size: 1.375em;
+	color: #353535;
+}
+h4 {
+	font-weight: 400;
+	font-size: 1.25em;
+	color: #D14020;
+}
+h5 {
+	font-weight: 500;
+	font-size: 1.125em;
+	color: #0B5384;
+}
+p {
+	font-weight: 400;
+	font-size: 1em;
+	color: #353535;
+}
+.lead {
+	font-weight: 400;
+	font-size: 1.125em;
+	color: #353535;
+}
+a {
+	color:#0091CB;
+	text-decoration: underline;
+}
+a:hover, a:focus, a:visited {
+	color:#DF5131;
+}
+.callout {
+	background-color: #0B5384;
+	color: #353535;
+	padding: 20px;
+}
+.callout p {
+	font-weight: 400;
+	font-size: 1em;
+	color: #353535;
+}
+.btn-default {
+	font-weight: 500;
+	font-size: 1em;
+	color: #0B5384;
+	background-color: #FFB920;
+	border: none;
+	border-radius: 4px;
+	text-decoration: none;
+}
+.btn-default:hover {
+	background-color:#f19b14;
+}
+a.btn {
+	text-decoration: none;
+	color:#0B5384;
+}
+.form-group.required .control-label:after {
+  content:" *";
+  color:red;
+}
+.error {
+	color: red;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content="Use this online form to contact the Chemical Catalysis for Bioenergy Consortium (ChemCatBio).">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <title>Contact Us | Chemical Catalysis for Bioenergy Consortium</title>
+
+    <!--#include virtual="/assets/template/head.html"-->
+    
+    <!-- page styles -->
+    <link rel="stylesheet" href="css/mailform.css"/>
+
+</head>
+
+<body>
+<div class="page" id="content">
+   
+    <header>
+        <!--#include virtual="/assets/template/top-nav.html"-->
+        <script>
+    		$(document).ready(function(){
+				$('.navbar-nav #contact').addClass('active');
+		 	})
+		</script>
+    </header>
+
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+
+    <main>
+
+        <section class="well well3 bg1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12">
+                    
+                    <h1>Contact Us</h1>
+                    
+                    <img src="images/contact-260.jpg" class="img-responsive margin-top" alt="Photo of two scientists in a lab"/>
+                    
+<p class="lead">Contact us to access the diverse resources, capabilities, and expertise within the ChemCatBio network and to find out more about collaboration  opportunities. Provide your <em>name, email address, and a brief description</em> of the nature of your inquiry. Our cross-lab concierge service will put you in touch with the relevant experts within three days.</p>
+			
+            <form class='mailform' method="post" action="bat/rd-mailform.php" data-type="contact">
+              <input type="hidden" name="form-type" value="contact">
+                            <div class="form-group" data-add-placeholder>
+                                <label for="mailform-input-name">Name:</label>
+                                <input id="mailform-input-name"
+                                       type="text"
+                                       name="name"
+                                       data-constraints="@LettersOnly @NotEmpty"/>
+                            </div>
+
+                            <div class="form-group" data-add-placeholder>
+                                <label for="mailform-input-email">Email:</label>
+                                <input id="mailform-input-email"
+                                       type="text"
+                                       name="email"
+                                       data-constraints="@Email @NotEmpty"/>
+                            </div>
+
+                            <div class="form-group textarea" data-add-placeholder>
+                                <label for="mailform-input-textarea">Comment:</label>
+                                <textarea id="mailform-input-textarea"
+                                          name="message"
+                                          data-constraints="@NotEmpty"></textarea>
+                            </div>
+
+                            <div class="form-group btn-wr">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </form>  
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<!--#include virtual="/assets/template/footer.html" -->
+
+</div>
+
+<!--#include virtual="/assets/template/scripts.html" -->
+
+</body>
+</html>
